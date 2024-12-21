@@ -1,0 +1,79 @@
+/* Стили для карточки */
+.card {
+    width: 100px;
+    height: 150px;
+    border: 2px solid #d6b0e0; /* Нежный цвет рамки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #f7e7f2; /* Нежный светлый фон карточки */
+    transition: transform 0.3s ease; /* Добавление анимации для плавного переворота */
+}
+
+.card:hover {
+    background-color: #e7e7cd; /* Мягкий оттенок на ховер */
+}
+
+/* Стили для задней стороны карточки с нежным градиентом */
+.card-back {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #9b5de5 25%, #f15bb5 25%, #f15bb5 50%, #9b5de5 50%, #9b5de5 75%, #f15bb5 75%, #f15bb5 100%);
+    background-size: 20px 20px; /* Размер полос */
+    background-position: 0 0;
+}
+
+/* Стили для лицевой стороны карточки */
+.card-front {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d6b0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Стили для игрового поля */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 10px; /* Расстояние между карточками */
+    justify-content: center; /* Центрируем игровое поле */
+    margin-top: 50px;
+    max-width: 450px; /* Максимальная ширина игрового поля */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Центрируем всё содержимое страницы */
+body {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    min-height: 100vh; /* Высота страницы на весь экран */
+    margin: 0; /* Убираем отступы по умолчанию */
+    background-image: linear-gradient(135deg, #f5e0f3, #e0c3d7); /* Плавный фон с нежным градиентом */
+}
+
+/* Центрируем контейнер внутри страницы */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
