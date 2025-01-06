@@ -10,7 +10,7 @@ This project is still under development, but you can try the demo version.
 - **React**  
 - **CSS**  
 - **JavaScript**  
-- **Netlify** (for hosting the demo)
+- **Netlify**
 
 ---
 
