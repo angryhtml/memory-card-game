@@ -1,19 +1,20 @@
 import './Card.css';
 import ReactCardFlip from 'react-card-flip';
 
-function Card({ content, isFlipped, onClick }) {
-
+function Card({ card, isFlipped, onClick }) {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
 
       <div onClick={onClick} className="card-back">
       </div>
 
-      <div onClick={onClick} className="card-front">
-        {content}
+      <div className="card-front">
+        <div className="icon-content">
+          {card.icon}
+        </div>
       </div>
+      
     </ReactCardFlip>
-
   );
 }
 

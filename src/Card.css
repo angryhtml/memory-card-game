@@ -1,14 +1,14 @@
 .card {
     width: 100px;
     height: 150px;
-    border: 2px solid #d6b0e0; /* Нежный цвет рамки */
+    border: 2px solid #d6b0e0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     cursor: pointer;
-    background-color: #f7e7f2; /* Нежный светлый фон карточки */
-    transition: transform 0.3s ease; /* Добавление анимации для плавного переворота */
+    background-color: #f7e7f2;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -29,7 +29,6 @@
     border: 1px solid #ccc;
 }
 
-/* Стили для лицевой стороны карточки */
 .card-front {
     width: 100px;
     height: 150px;
@@ -45,33 +44,122 @@
     font-size: 24px;
 }
 
-/* Стили для игрового поля */
+
 .game-board {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
-    gap: 10px; /* Расстояние между карточками */
-    justify-content: center; /* Центрируем игровое поле */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
     margin-top: 50px;
-    max-width: 450px; /* Максимальная ширина игрового поля */
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Центрируем всё содержимое страницы */
 body {
     display: flex;
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
-    min-height: 100vh; /* Высота страницы на весь экран */
-    margin: 0; /* Убираем отступы по умолчанию */
-    background-image: linear-gradient(135deg, #e3a9ea, #e0ccc3); /* Плавный фон с нежным градиентом */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(135deg, #e3a9ea, #e0ccc3);
 }
 
-/* Центрируем контейнер внутри страницы */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.icon-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3.5rem;
+}
+
+.heart-icon {
+    color: #e74c3c;
+}
+
+.star-icon {
+    color: #f1c40f;
+}
+
+.moon-icon {
+    color: #34495e;
+}
+
+.sun-icon {
+    color: #f39c12;
+}
+
+.cat-icon {
+    color: #e67e22;
+}
+
+.dog-icon {
+    color: #795548;
+}
+
+.car-icon {
+    color: #7f8c8d;
+}
+
+.tree-icon {
+    color: #27ae60;
+}
+
+.menu,
+.end-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.menu h1,
+.end-screen h2 {
+    font-family: 'Arial', sans-serif;
+    color: #5c2a6e;
+}
+
+.menu p,
+.end-screen p {
+    color: #333;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #d6b0e0;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b989c9;
+}
+
+.game-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5c2a6e;
 }
